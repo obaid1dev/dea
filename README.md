@@ -216,3 +216,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md).
 ## License
 
 [MIT](LICENSE). Example pages in `examples/` are original and fictional.
+
+[![Architecture diagram](https://gitdiagram.com/diagram-badge.svg)](https://gitdiagram.com/obaid1dev/dea?utm_source=readme&utm_medium=badge)
+
+[![Architecture diagram of obaid1dev/dea](https://gitdiagram.com/obaid1dev/dea/diagram.png)](https://gitdiagram.com/obaid1dev/dea?utm_source=readme&utm_medium=picture)

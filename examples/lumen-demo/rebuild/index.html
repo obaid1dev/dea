@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Harbor: budgeting for freelancers</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Build-mode example: a DIFFERENT brand (Harbor) styled only with variables from ../output/tokens.css -->
+<link rel="stylesheet" href="../output/tokens.css">
+<style>
+  *{box-sizing:border-box;margin:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--background);color:var(--foreground);font:var(--weight-body) var(--text-body)/var(--leading-body) var(--font-sans);-webkit-font-smoothing:antialiased}
+  .container{max-width:var(--container-max);margin:0 auto;padding:0 var(--space-3)}
+  .nav{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--background) 80%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+  .nav .container{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .brand{font-weight:700;font-size:20px;letter-spacing:-.02em;display:flex;gap:8px;align-items:center;color:var(--foreground);text-decoration:none}
+  .brand i{width:22px;height:22px;border-radius:7px;background:linear-gradient(135deg,var(--primary),var(--ring));display:inline-block}
+  .links{display:flex;gap:28px}.links a{color:var(--muted-foreground);text-decoration:none;font-size:14px;font-weight:500;transition:color var(--duration-base) var(--ease)}.links a:hover{color:var(--foreground)}
+  .row{display:flex;gap:12px;justify-content:center}
+  .btn{display:inline-flex;align-items:center;justify-content:center;height:40px;padding:0 18px;border-radius:var(--radius-md);font:500 14px var(--font-sans);border:1px solid transparent;text-decoration:none;cursor:pointer;transition:background var(--duration-base) var(--ease),transform var(--duration-base) var(--ease),box-shadow var(--duration-base) var(--ease)}
+  .btn-primary{background:var(--primary);color:var(--primary-foreground);box-shadow:var(--shadow-sm)}.btn-primary:hover{transform:translateY(-1px);box-shadow:var(--shadow-md);filter:brightness(.92)}
+  .btn-secondary{background:var(--card);color:var(--foreground);border-color:var(--border)}.btn-secondary:hover{background:var(--muted)}
+  .btn-lg{height:48px;padding:0 26px;font-size:15px;border-radius:12px}
+  .badge{display:inline-block;padding:4px 12px;font-size:12px;font-weight:600;letter-spacing:.02em;border-radius:var(--radius-full);background:color-mix(in srgb,var(--primary) 12%,var(--background));color:var(--primary)}
+  section{padding:var(--space-12) 0}
+  .hero{text-align:center;padding:120px 0 96px;background:radial-gradient(ellipse at top,color-mix(in srgb,var(--primary) 10%,var(--background)),transparent 60%)}
+  h1{font-size:var(--text-h1);line-height:var(--leading-h1);letter-spacing:var(--tracking-h1);font-weight:var(--weight-h1);margin:20px auto;max-width:14ch}
+  h2{font-size:var(--text-h2);line-height:var(--leading-h2);letter-spacing:var(--tracking-h2);font-weight:var(--weight-h2)}
+  h3{font-size:var(--text-h3);line-height:var(--leading-h3);letter-spacing:var(--tracking-h3);font-weight:var(--weight-h3)}
+  .lead{font-size:var(--text-lead);color:var(--muted-foreground);max-width:52ch;margin:0 auto 36px}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-3);margin-top:48px}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:28px;box-shadow:var(--shadow-sm);transition:box-shadow var(--duration-base) var(--ease),transform var(--duration-base) var(--ease)}
+  .card:hover{box-shadow:var(--shadow-md);transform:translateY(-2px)}.card p{color:var(--muted-foreground);font-size:15px;margin-top:8px}
+  .alt{background:var(--muted)}
+  footer{border-top:1px solid var(--border);padding:48px 0;color:var(--muted-foreground);font-size:14px}footer .container{display:flex;justify-content:space-between}
+  @media(max-width:860px){h1{font-size:40px}.grid{grid-template-columns:1fr}.links{display:none}}
+</style></head><body>
+<header class="nav"><div class="container"><a class="brand" href="#"><i></i>Harbor</a>
+<nav class="links"><a href="#">Features</a><a href="#">Pricing</a><a href="#">Guides</a><a href="#">Contact</a></nav>
+<div class="row"><a class="btn btn-secondary" href="#">Log in</a><a class="btn btn-primary" href="#">Try Harbor</a></div></div></header>
+<main>
+<section class="hero"><div class="container"><span class="badge">New · Tax estimates</span>
+<h1>Money tools for people who work for themselves</h1>
+<p class="lead">Harbor tracks invoices, taxes and cash flow in one quiet dashboard so freelancers can stop guessing.</p>
+<div class="row"><a class="btn btn-primary btn-lg" href="#">Start free</a><a class="btn btn-secondary btn-lg" href="#">See how it works</a></div></div></section>
+<section class="alt"><div class="container"><h2>Built around how freelancers earn</h2>
+<div class="grid">
+<article class="card"><h3>Invoices</h3><p>Send, track and chase invoices without leaving your dashboard.</p></article>
+<article class="card"><h3>Tax set-aside</h3><p>See what to save from every payment so April is never a surprise.</p></article>
+<article class="card"><h3>Cash forecast</h3><p>A clear three-month view of what is coming in and going out.</p></article></div></div></section>
+</main>
+<footer><div class="container"><span>© 2026 Harbor (fictional demo brand)</span><span>Privacy · Terms</span></div></footer>
+</body></html>

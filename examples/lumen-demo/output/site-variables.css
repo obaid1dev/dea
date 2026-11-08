@@ -1,0 +1,40 @@
+/* The site's OWN custom properties, resolved. Use when you want to mirror its naming; otherwise use tokens.css. */
+:root {
+  --bg: #fafaf9;
+  --surface: #ffffff;
+  --surface-2: #f3f2ef;
+  --fg: #1c1917;
+  --fg-muted: #6b6560;
+  --border: #e7e5e0;
+  --accent: #4f46e5;
+  --accent-hover: #4338ca;
+  --accent-soft: #eef2ff;
+  --accent-fg: #ffffff;
+  --success: #16a34a;
+  --warning: #d97706;
+  --danger: #dc2626;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-pill: 999px;
+  --shadow-sm: 0 1px 2px rgba(28,25,23,.06);
+  --shadow-md: 0 4px 12px rgba(28,25,23,.08), 0 1px 3px rgba(28,25,23,.06);
+  --shadow-lg: 0 20px 40px -12px rgba(79,70,229,.25);
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, monospace;
+  --ease: cubic-bezier(.2,.8,.2,1);
+}
+
+/* dark overrides (as declared by the site) */
+.dark, [data-theme="dark"] {
+  --bg: #0c0a09;
+  --surface: #171412;
+  --surface-2: #211d1a;
+  --fg: #f5f5f4;
+  --fg-muted: #a8a29e;
+  --border: #2a2522;
+  --accent: #818cf8;
+  --accent-hover: #a5b4fc;
+  --accent-soft: #1e1b4b;
+  --accent-fg: #0c0a09;
+}
